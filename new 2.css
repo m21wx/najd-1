@@ -1,0 +1,249 @@
+:root{
+	--main-bg-color:#009688;
+	--text-color:#777;
+}
+::-webkit-scrollbar{width: 20px; }
+::-webkit-scrollbar-thumb{background-color:var(--main-bg-color)}
+::-webkit-scrollbar-track{ background-color:#ccc;}
+
+.najd{
+    margin-left: 15px;
+	color: #777;
+	text-transform: capitalize;
+}
+.icon{
+	color:var(--main-bg-color)
+}
+.cpp{
+	text-transform: capitalize;
+}
+.ml-15{
+	    margin-left: 15px;	
+}
+.mr-15{
+	    margin-left: 15px;	
+}
+.mb-20px{
+	margin-bottom:15px;
+}
+.pl-15{
+	padding-left: 15px;
+}
+.pr-15{
+	padding-right: 15px;
+}
+.pr-20{
+	padding-right: 20px;
+}
+.p-2015{
+   padding: 20px 15px;
+}
+.pm-20{
+	padding-bottom:20px;
+}
+.text-color{
+	color: #777;
+}
+.wid100{
+	width:100%;
+}
+.inline-block{
+	display: inline-block;
+}
+.bg-eee{
+	background-color:#eee;
+}
+.bg-main{
+	background-color:var(--main-bg-color);
+}
+.color-main{
+	color:var(--main-bg-color);
+}
+.height-border{
+	    height: 20px;
+    border-radius: 10px;
+}
+.btn{
+	background-color: var(--main-bg-color);
+	color: #fff;
+		text-transform: capitalize;
+}
+.text{
+    text-align: justify;
+    line-height: 2;
+    margin-top: 10px;
+    text-transform: capitalize;
+}
+.border-bottom{
+	   border-bottom: 1px solid #77777778;
+}
+.span-m{
+    width: 90%;
+    display: block;
+    height: 100%;
+    border-radius: 10px;
+	background-color:var(--main-bg-color);
+	position:relative;
+	color: #fff;
+}
+.span-nmber{
+	position: absolute;
+    bottom: -6px;
+    left: 50%;
+    font-size: 17px;
+}
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box; 
+	font-family: 'Cairo', sans-serif;
+	font-family: 'Noto Nastaliq Urdu', serif;
+	list-style: none;
+	
+}
+/*
+	:focus التي استقبل التركيز
+	:checked أزرار انتقاء
+	:default أي عنصر مُختار افتراضيًا
+	:disabled  أي عنصر مُعطَّل
+	:valid   التي نجح المتصفح بالتحقق من صحة محتوياتها.
+	:required  لتي ضُبِطَت الخاصية requiredعليها.
+	::placeholder  يُمثِّل النص البديل في أحد عناصر النماذج 
+	:indeterminate  يّة نماذج تكون حالتها غير معروفة (indeterminate).
+	:in-range    التي تكون قيمتها ضمن المجال المسموح المُحدَّد عبر الخاصيتينmin و max.
+	
+	-webkit-appearance: none;
+	appearance: none;    اخفاء علامة انبوات راديو وتجيك 
+*/
+
+body{
+	background-color:#eee;
+}
+main{
+	width:60%;
+	margin: 10px auto  0;
+	display: grid;
+    grid-template-columns:300px 1fr;
+    gap:10px;
+	transition: .3s;
+}
+@media (min-width:668px) and (max-width: 1200px) {
+	main{
+		    width: 90%;
+			padding: 10px;
+			
+}}
+main>div{
+   background-color: #fff;
+    box-shadow: 0 0 3px #000;
+}
+main .majid1{
+	grid-row: 1 / 3;
+	padding-bottom: 20px;
+}
+main .majid1 img{
+	width:100%;
+}
+main .majid1 h2{
+     margin-top: -69px;
+    text-transform: capitalize;
+}
+main .majid1>.info{
+	padding: 0 15px;  
+	
+}
+main .majid1>.info ul{
+	padding-bottom: 15px;
+	margin-top: 15px;
+    border-bottom: 1px solid #77777778;
+}
+
+main .majid2{}
+main .majid3{
+	    grid-column-start: 2;
+}
+@media (max-width:667px){
+	main{
+		    width: 100%;
+			padding: 10px;
+			grid-template-columns: 100%;
+			gap: 25px;
+		}  
+		main .majid3{
+		  grid-column-start: 1;
+		  }
+		  footer>p{
+	     margin-right: 30px;
+		  }
+}	
+
+footer{
+    background-color: var(--main-bg-color);
+    margin-top: 10px;
+    min-height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer>p{
+	color: #fff;
+}
+footer .media{
+	 display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-basis: 15%;
+}
+footer .media .twitter ,
+footer .media .facebook ,
+footer .media .instagram {
+    height: 50px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+	transition: .6s;
+}
+footer .media .twitter i,
+footer .media .facebook i,
+footer .media .instagram i{
+	font-size: 30px;
+    color: #fff;
+}
+footer .media .twitter:hover{
+	background-color: #1DA1F2;
+}
+footer .media .facebook:hover{
+		background-color: #4267B2;
+}
+footer .media .instagram:hover{
+   background-color: #DD2A7B ;
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
